@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Subin</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".outer-menu-item").hover(
+          function () {
+            $(this).find(".inner-menu").show();
+          },
+          function () {
+            $(this).find(".inner-menu").hide();
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <header id="main-header">
+        <hgroup>
+          <h1 class="master-title">수빈's portfolio</h1>
+          <h2 class="master-description">용문고등학교 2-3</h2>
+        </hgroup>
+        <nav id="main-navigation">
+          <div class="pull-left">
+            <ul class="outer-menu">
+              <li class="outer-menu-item">
+                <span class="menu-title">introducing</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="index.html">취미</a></li>
+                  <li class="inner-menu-item">
+                    <a href="oott.html">좋아하는 음식</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="outer-menu-item">
+                <span class="menu-title">Interest</span>
+                <ul class="inner-menu">
+                  <li class="inner-menu-item"><a href="index.html"></a></li>
+                  <li class="inner-menu-item">
+                    <a href="interest.html">관심 분야</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="pull-right">
+            <div class="search-bar">
+              <form>
+                <input type="text" class="input-search" />
+                <input
+                  type="submit"
+                  class="input-search-submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="content">
+        <section id="main-section">
+          <article>
+            <div class="article-header">
+              <h1 class="article-title">나의 취미</h1>
+            </div>
+            <div class="article-body">
+              <img src="magic-trick.png" />
+              <p>안녕하세요, 저는 용문고등학교에 재학중인 박수빈입니다.</p>
+              <p>저의 취미는 마술입니다.</p>
+              <p>'취미'로만 합니다.</p> 
+            </div>
+          </article>
+        </section>
+        <aside id="main-aside">
+          <div class="aside-list">
+            <h4>마술 사이트</h4>
+            <ul>
+              <li><a href="https://www.lnmagic.co.kr/">렉쳐노트</a></li>
+              <li><a href="https://arcanamagic.com/">아르카나 마술잡지</a></li>
+            </ul>
+          </div>
+          <div class="aside-list">
+            <h4>mbti</h4>
+            <ul>
+              <li><a href="https://illustak.tistory.com/305">1차 INFP</a></li>
+              <li><a href="https://lazyinfp.tistory.com/entry/infp-%ED%8C%A9%ED%8F%AD-%EC%9D%B8%ED%94%84%ED%94%BC-%ED%8A%B9%EC%A7%95-70%EA%B0%80%EC%A7%80-%EB%AA%A8%EC%9D%8C-1-%EC%9E%94%EB%8B%A4%EB%A5%B4%ED%81%AC%ED%98%95-%ED%82%A4%EC%9B%8C%EB%93%9C-%EC%9C%A0%EB%AA%85%EC%9D%B8-%EC%9D%8C%EC%95%85%ED%8A%B9%EC%A7%95">2차 INFP</a></li>
+              <li><a href="https://namu.wiki/w/ISTP">3차 ISTP</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
